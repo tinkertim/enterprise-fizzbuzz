@@ -22,4 +22,4 @@ Pull requests are welcome with appropriate sign-off.
 
 ### The Roadmap
 
-Mostly more fizzing and buzzing. 
+Mostly more fizzing and buzzing. Maybe buzzing and fizzing.  
