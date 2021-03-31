@@ -1,0 +1,40 @@
+{
+    "id": "NLwt9bHms0K8Ic7qlMz9",
+    "name": "What Is Enterprise Fizzbuzz?",
+    "content": [
+        {
+            "type": "text",
+            "text": "Enterprise Fizzbuzz is a demonstration repository of wholesome funny goodness. It was created by Tim Post at Swimm as a means of demonstrating how Swimm works.\n\nFizzBuzz is a beginner programming puzzle:\n\n> Print the numbers 1 to 100. If the number printed is a multiple of 3, print the word fizz. If the number printed is a multiple of 5, print the word buzz. If the number printed is a multiple of both 3 and 5, print the word fizzbuzz.\n\nIt came to light around 2010 that an increasing number of programmers have difficulty with very simple problems. The solution to the problem is to use the modulus operator (usually `%` ) to see if 3 or 5 divide cleanly into the number, and ternary operator to determine the formatting logic for each row.\n\nThe solution really is this simple:"
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                " {",
+                "   unsigned int i;",
+                "   TOP_AND_BOTTOM;",
+                "*  for(i=1 ; i < 101 ; i++)",
+                "*    printf(\"| %-3d | %-4s | %-4s |\\n\", i, i%3 ? \"\" : \"Fizz\", i%5 ? \"\" : \"Buzz\");",
+                "   TOP_AND_BOTTOM;",
+                "   return 0;",
+                " }"
+            ],
+            "firstLineNumber": 10,
+            "path": "src/lib/libfizzbuzz/libfizzbuzz.c",
+            "comments": [
+                "I give you, fizzbuzz!"
+            ]
+        },
+        {
+            "type": "text",
+            "text": "Wow, so what are we doing, or more to the point, _why_ are we doing this?\n\nTo illustrate how code paths tend to look for BBOM (big ball of mud) maintainers. I didn't just need a fake repo, I also need to show how CI/CD works with Swimm in the machinery - this thing needs to actually build and have tests and run. It needs to be a real project.\n\nSo?\n\nWe'll have libfizzbuzz - the core of it all, written in C. Then we'll have to make some Python wrappers to use the library (we dare not just implement it purely in python! well, maybe we do but just _for now_), and make a fizz and buzz microservices, and basically, build an enterprise solution to the simplest programming problem on the planet beyond how to add two jquery variables together."
+        }
+    ],
+    "symbols": {},
+    "file_version": "2.0.0",
+    "meta": {
+        "app_version": "0.4.0-0",
+        "file_blobs": {
+            "src/lib/libfizzbuzz/libfizzbuzz.c": "87873e6bac2eca5b472d0a319435659d4ef04205"
+        }
+    }
+}
