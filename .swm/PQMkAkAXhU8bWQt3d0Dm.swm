@@ -29,7 +29,9 @@
             ],
             "firstLineNumber": 11,
             "path": "src/lib/libfizzbuzz/libfizzbuzz.c",
-            "comments": []
+            "comments": [
+                "This is where the problem is introduced."
+            ]
         },
         {
             "type": "text",
