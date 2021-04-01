@@ -1,0 +1,47 @@
+{
+    "id": "PQMkAkAXhU8bWQt3d0Dm",
+    "name": "Find The Sneaky Dangerous Pointer Operation",
+    "task": {
+        "dod": "There's some shady derefrencing going on, better go find it!",
+        "tests": [
+            "make sense"
+        ],
+        "hints": [
+            "Look for an out of place & ..."
+        ]
+    },
+    "content": [
+        {
+            "type": "text",
+            "text": "Somewhere, a reference is passed where it shouldn't be. Your job is to find it."
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                "   unsigned int i;",
+                "   TOP_AND_BOTTOM;",
+                "   for(i=1 ; i < 101 ; i++)",
+                "*    printf(\"| %-3d | %-4s | %-4s |\\n\", i, i%3 ? \"\" : \"Fizz\", i%5 ? \"\" : \"Buzz\");",
+                "+    printf(\"| %-3d | %-4s | %-4s |\\n\", &i, i%3 ? \"\" : \"Fizz\", i%5 ? \"\" : \"Buzz\");",
+                "   TOP_AND_BOTTOM;",
+                "   return 0;",
+                " }"
+            ],
+            "firstLineNumber": 11,
+            "path": "src/lib/libfizzbuzz/libfizzbuzz.c",
+            "comments": []
+        },
+        {
+            "type": "text",
+            "text": "The code is in a fragile state! There's a pass-by-reference that should not exist somewhere, and you need to find it before you kick off a build. If you don't, your team won't get pizza on the 30th for going a whole month without breaking the build, and everyone is going to be hungry. The future of mozzarella and mushrooms is in your hands!"
+        }
+    ],
+    "symbols": {},
+    "file_version": "2.0.0",
+    "meta": {
+        "app_version": "0.4.0-0",
+        "file_blobs": {
+            "src/lib/libfizzbuzz/libfizzbuzz.c": "87873e6bac2eca5b472d0a319435659d4ef04205"
+        }
+    }
+}
