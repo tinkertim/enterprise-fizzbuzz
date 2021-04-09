@@ -1,12 +1,7 @@
 #include <stdio.h>
 #include "libfizzbuzz.h"
 
-#ifndef TOP_AND_BOTTOM
-#define TOP_AND_BOTTOM printf("+-----+------+------+\n");
-#else
-#error "How much time are you going to spend on a stupid interview question?"
-#endif
-int main(void)
+void do_fizz_buzz(void)
 {
   unsigned int i;
   TOP_AND_BOTTOM;
