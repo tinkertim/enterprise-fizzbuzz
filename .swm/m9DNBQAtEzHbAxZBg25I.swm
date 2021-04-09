@@ -1,0 +1,37 @@
+{
+    "id": "m9DNBQAtEzHbAxZBg25I",
+    "name": "Compiler Overrides",
+    "content": [
+        {
+            "type": "text",
+            "text": "Like any other good enterprise project, Enterprise Fizzbuzz lets you build mind-boggingly long compiler commands by defining literally almost any string constant with a `-D CONSTANT=VALUE` compile-time option. Not only will this make the build look cool, but it's also the first in the series of changes we're introducing to make build-time go as slow as possible so you have more time to relax and play video games at work.\n\nThese constants will appear below, mostly being defined in headers so deep in the tree that nobody will ever find them."
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                " #ifndef LIBFIZZBUZZ_H",
+                " #define LIBFIZZBUZZ_H",
+                " ",
+                "*#ifndef TOP_AND_BOTTOM",
+                "*#define TOP_AND_BOTTOM printf(\"+-----+------+------+\\n\");",
+                "*#endif",
+                " ",
+                " void do_fizz_buzz(void);",
+                " "
+            ],
+            "firstLineNumber": 1,
+            "path": "src/lib/libfizzbuzz/libfizzbuzz.h",
+            "comments": [
+                "This defines the way the fizzbuzzy output is \"boxed\" - take note that this should not be used to wrap the output in XML unless you really want to drive someone crazy."
+            ]
+        }
+    ],
+    "symbols": {},
+    "file_version": "2.0.0",
+    "meta": {
+        "app_version": "0.4.0-0",
+        "file_blobs": {
+            "src/lib/libfizzbuzz/libfizzbuzz.h": "2e66ab1e7212b730304b3658a8434c0f2b4d9f34"
+        }
+    }
+}
