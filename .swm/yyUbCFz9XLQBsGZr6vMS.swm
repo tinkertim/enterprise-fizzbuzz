@@ -1,0 +1,80 @@
+{
+    "id": "yyUbCFz9XLQBsGZr6vMS",
+    "name": "The General Flow Of FizzBuzz",
+    "content": [
+        {
+            "type": "text",
+            "text": "Enterprise Fizzbuzz is a demonstration repo for use with learning the ropes with Swimm. It's a humorous take on what should be a 1-line solution to a simple programming problem:\n\n> Print the numbers 1 to 100.\n> \n> If the number is a multiple of 3, print \"fizz\" next to it.\n> \n> If the number is a multiple of 5, print \"buzz\" next to it.\n> \n> If the number is a multiple of both 3 and 5, print \"fizzbuzz\" next to it.\n\nThe answer is, of course, to just use the modulus operand to see if 3 or 5 divide evenly into the iteration in the loop, and print accordingly. But we don't stop there, no - we have to make it harder, much much harder than it should be. We're making a core library that handles all the fizzing and buzzing, and then building as many fizzing and buzzing implementations as possible!\n\nRight now, we have this bloated implementation:"
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                " #include <stdio.h>",
+                " #include \"libfizzbuzz.h\"",
+                " ",
+                "*/**",
+                "* * Implements the fizzbuzz iterative counter",
+                "* * @param iterations The number of iterations to print",
+                "* * @return void",
+                "* */ ",
+                "*void do_fizz_buzz(unsigned int iterations)",
+                "*{",
+                "*  unsigned int i;",
+                "*  TOP_AND_BOTTOM;",
+                "*  for(i=1 ; i < 101 ; i++)",
+                "*    printf(\"| %-3d | %-4s | %-4s |\\n\", i, i%3 ? \"\" : \"Fizz\", i%5 ? \"\" : \"Buzz\");",
+                "*  TOP_AND_BOTTOM;",
+                "*  return 0;",
+                "*}",
+                " ",
+                " /**",
+                "  * Shortcut to iterate 100 times (which is the standard)"
+            ],
+            "firstLineNumber": 1,
+            "path": "src/lib/libfizzbuzz/libfizzbuzz.c",
+            "comments": [
+                "Here's our current main 'caller'"
+            ]
+        },
+        {
+            "type": "text",
+            "text": "And if you take a look at the header, you'll see the compile-time constant you can tweak to alter formatting:"
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                " #ifndef LIBFIZZBUZZ_H",
+                " #define LIBFIZZBUZZ_H",
+                " ",
+                "*/**",
+                "* * Controls how the 'printed' iteration list is styled on the top and bottom.",
+                "* * Can be overridden via defining the constant on the command line.",
+                "* */",
+                "*#ifndef TOP_AND_BOTTOM",
+                "*#define TOP_AND_BOTTOM printf(\"+-----+------+------+\\n\");",
+                "*#endif // TOP_AND_BOTTOM",
+                " ",
+                " /* Public Prototypes */",
+                " void do_fizz_buzz(unsigned int);"
+            ],
+            "firstLineNumber": 1,
+            "path": "src/lib/libfizzbuzz/libfizzbuzz.h",
+            "comments": [
+                "We have selectable formatting implemented in the header, which can be overridden at compile time"
+            ]
+        },
+        {
+            "type": "text",
+            "text": "That's not enough. We need to come up with at least 20 different callers that call `do_fizz_buzz` internally, so that we can provide fizzing and buzzing in many situations, with lots of complexity, overrides that produce unexpected behavior, and lots of tests."
+        }
+    ],
+    "symbols": {},
+    "file_version": "2.0.1",
+    "meta": {
+        "app_version": "0.4.4-0",
+        "file_blobs": {
+            "src/lib/libfizzbuzz/libfizzbuzz.c": "301b05b53c1276a3e03d9ba79d6e2bfdb634f4ef",
+            "src/lib/libfizzbuzz/libfizzbuzz.h": "2e66ab1e7212b730304b3658a8434c0f2b4d9f34"
+        }
+    }
+}
