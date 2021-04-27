@@ -1,0 +1,35 @@
+{
+    "id": "4iGzDvKXk3BLsd1v6IbB",
+    "name": "Future Directions",
+    "content": [
+        {
+            "type": "text",
+            "text": "In the future, FizzBuzz should:\n\n*   Produce output in XML, JSON or YAML formats natively (without hacky overrides), along with \"classic\" ASCII.\n    \n*   Contain a microservice with a small API which callers can use to consume fizzing and buzzing iterations, and relay them as they see fit.\n    \n*   A suite of unit tests\n    \n*   Possibly, a kernel module to implement `/dev/fizzbuzz`"
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                " # Process this file with autoconf to produce a configure script.",
+                " ",
+                " AC_PREREQ([2.71])",
+                "*AC_INIT([Enterprise Fizzbuzz], [3.14], [tim@swimm.ioS])",
+                " AC_CONFIG_SRCDIR([src/exec/fizzbuzz.c])",
+                " AC_CONFIG_HEADERS([config.h])",
+                " "
+            ],
+            "firstLineNumber": 2,
+            "path": "configure.ac",
+            "comments": [
+                "This snippet exists just so maintainers are notified by Swimm to check on this document for relevancy if the version ever changes. This is an example of a document that doesn't really have a lot of code tied to it - we're talking about rationale, future directions, things that we tried but didn't work - etc. This is an example of that sort of 'tacit' knowledge that has to stay in sync - even though it's not tied to any specific lines of code, it's still tied TO the code."
+            ]
+        }
+    ],
+    "symbols": {},
+    "file_version": "2.0.1",
+    "meta": {
+        "app_version": "0.4.4-0",
+        "file_blobs": {
+            "configure.ac": "49abe1c2b5a8dbaba661e5f5fe5c9983357d9557"
+        }
+    }
+}
