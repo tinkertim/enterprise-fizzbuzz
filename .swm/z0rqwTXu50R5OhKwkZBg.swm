@@ -1,0 +1,42 @@
+{
+    "id": "z0rqwTXu50R5OhKwkZBg",
+    "name": "Complie-time overrides",
+    "content": [
+        {
+            "type": "text",
+            "text": "Currently, Enterprise FizzBuzz supports generic ASCII boxing of the output, which is implemented in the public header as follows:"
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                "  * Controls how the 'printed' iteration list is styled on the top and bottom.",
+                "  * Can be overridden via defining the constant on the command line.",
+                "  */",
+                "*#ifndef TOP_AND_BOTTOM",
+                "*#define TOP_AND_BOTTOM printf(\"+-----+------+------+\\n\");",
+                "*#endif // TOP_AND_BOTTOM",
+                "*",
+                " /* Public Prototypes */",
+                " void do_fizz_buzz(unsigned int);",
+                " void fizz_buzz(void);"
+            ],
+            "firstLineNumber": 5,
+            "path": "src/lib/libfizzbuzz/libfizzbuzz.h",
+            "comments": [
+                "Here, we define a generic ASCII wrapper around the top and bottom of the output, _only_ if one isn't defined elsewhere (e.g. on the command line):"
+            ]
+        },
+        {
+            "type": "text",
+            "text": "This means, you can pass `-D TOP_AND_BOTTOM` at compile time, and it will take precedence over what is in the header.\n\nIdeally, we only use this as a last resort while the rest of the library isn't implemented fully yet - and we write callers that output XML, JSON and YAML individually.\n\nWe'll then implement a fizzbuzz service that just produces fizzing and buzzing output, which the caller can wrap in any method."
+        }
+    ],
+    "symbols": {},
+    "file_version": "2.0.1",
+    "meta": {
+        "app_version": "0.4.4-0",
+        "file_blobs": {
+            "src/lib/libfizzbuzz/libfizzbuzz.h": "2e66ab1e7212b730304b3658a8434c0f2b4d9f34"
+        }
+    }
+}
