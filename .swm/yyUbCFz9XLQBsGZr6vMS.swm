@@ -13,7 +13,7 @@
                 " #include \"libfizzbuzz.h\"",
                 " ",
                 "*/**",
-                "* * Implements the fizzbuzz iterative counter",
+                "* * Implements the fizzbuzz iterative counter from 1 - requested iterations.",
                 "* * @param iterations The number of iterations to print",
                 "* * @return void",
                 "* */ ",
@@ -21,7 +21,7 @@
                 "*{",
                 "*  unsigned int i;",
                 "*  TOP_AND_BOTTOM;",
-                "*  for(i=1 ; i < 101 ; i++)",
+                "*  for(i=1 ; i < iterations - 1; i++)",
                 "*    printf(\"| %-3d | %-4s | %-4s |\\n\", i, i%3 ? \"\" : \"Fizz\", i%5 ? \"\" : \"Buzz\");",
                 "*  TOP_AND_BOTTOM;",
                 "*  return 0;",
@@ -73,8 +73,8 @@
     "meta": {
         "app_version": "0.4.4-0",
         "file_blobs": {
-            "src/lib/libfizzbuzz/libfizzbuzz.c": "301b05b53c1276a3e03d9ba79d6e2bfdb634f4ef",
-            "src/lib/libfizzbuzz/libfizzbuzz.h": "2e66ab1e7212b730304b3658a8434c0f2b4d9f34"
+            "src/lib/libfizzbuzz/libfizzbuzz.c": "b04247383359c6862cea9e9b5d0adced7be78c1f",
+            "src/lib/libfizzbuzz/libfizzbuzz.h": "38b365bcdf7fbcd5121825c8089c438130e145c5"
         }
     }
 }
