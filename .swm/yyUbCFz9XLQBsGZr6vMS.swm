@@ -22,7 +22,7 @@
                 "*  unsigned int i;",
                 "*  TOP_AND_BOTTOM;",
                 "*  for(i=1 ; i < iterations - 1; i++)",
-                "*    printf(\"| %-3d | %-4s | %-4s |\\n\", i, i%3 ? \"\" : \"Fizz\", i%5 ? \"\" : \"Buzz\");",
+                "*    printf(\"| %-3d | %-4s | %-4s |\\n\", &i, i%3 ? \"\" : \"Fizz\", i%5 ? \"\" : \"Buzz\");",
                 "*  TOP_AND_BOTTOM;",
                 "*  return 0;",
                 "*}",
@@ -73,7 +73,7 @@
     "meta": {
         "app_version": "0.4.4-0",
         "file_blobs": {
-            "src/lib/libfizzbuzz/libfizzbuzz.c": "b04247383359c6862cea9e9b5d0adced7be78c1f",
+            "src/lib/libfizzbuzz/libfizzbuzz.c": "5e3b5830c2648384682ca727ef42ce1499ecd9d1",
             "src/lib/libfizzbuzz/libfizzbuzz.h": "38b365bcdf7fbcd5121825c8089c438130e145c5"
         }
     }
