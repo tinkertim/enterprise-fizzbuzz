@@ -14,6 +14,7 @@
 void do_fizz_buzz(unsigned int iterations)
 {
   unsigned int i;
+
   TOP_AND_BOTTOM;
   for(i=1 ; i < iterations - 1; i++)
     printf("| %-3d | %-4s | %-4s |\n", i, i%3 ? "" : "Fizz", i%5 ? "" : "Buzz");
