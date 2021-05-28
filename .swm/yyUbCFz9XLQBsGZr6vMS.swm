@@ -32,7 +32,7 @@
                 "  * Shortcut to iterate 100 times (which is the standard)"
             ],
             "firstLineNumber": 6,
-            "path": "src/lib/libfizzbuzz/libfizzbuzz.c",
+            "path": "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.c",
             "comments": [
                 "Here's our current main 'caller'"
             ]
@@ -59,7 +59,7 @@
                 " void do_fizz_buzz(unsigned int);"
             ],
             "firstLineNumber": 1,
-            "path": "src/lib/libfizzbuzz/libfizzbuzz.h",
+            "path": "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.h",
             "comments": [
                 "We have selectable formatting implemented in the header, which can be overridden at compile time"
             ]
@@ -81,7 +81,7 @@
                 " "
             ],
             "firstLineNumber": 1,
-            "path": "src/lib/libfizzbuzz/libfizzbuzz.c",
+            "path": "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.c",
             "comments": [
                 "We also need to make the code SUITable."
             ]
@@ -94,7 +94,7 @@
     "symbols": {
         "13cd1d22-c5e0-4b2e-8c8a-08496f3b4132": {
             "symbol": "13cd1d22-c5e0-4b2e-8c8a-08496f3b4132",
-            "path": "src/lib/libfizzbuzz/libfizzbuzz.c",
+            "path": "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.c",
             "text": "BATHING_SUIT",
             "lineNumber": 3,
             "lineData": "#ifndef BATHING_SUIT",
@@ -110,8 +110,8 @@
     "meta": {
         "app_version": "0.4.5-0",
         "file_blobs": {
-            "src/lib/libfizzbuzz/libfizzbuzz.c": "bfff20173f9f0e565d3bc07b66175cd594bbe2de",
-            "src/lib/libfizzbuzz/libfizzbuzz.h": "ce83d8e4c24f051b1906bbf980b24aac6a07f470"
+            "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.c": "bfff20173f9f0e565d3bc07b66175cd594bbe2de",
+            "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.h": "ce83d8e4c24f051b1906bbf980b24aac6a07f470"
         }
     }
 }
