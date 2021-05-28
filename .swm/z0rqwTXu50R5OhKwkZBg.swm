@@ -21,7 +21,7 @@
                 " void fizz_buzz(void);"
             ],
             "firstLineNumber": 5,
-            "path": "src/lib/libfizzbuzz/libfizzbuzz.h",
+            "path": "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.h",
             "comments": [
                 "Here, we define a generic ASCII wrapper around the top and bottom of the output, _only_ if one isn't defined elsewhere (e.g. on the command line):"
             ]
@@ -34,7 +34,7 @@
     "symbols": {
         "4135eebc-ffc3-422e-b4f6-7e75a130bb58": {
             "symbol": "4135eebc-ffc3-422e-b4f6-7e75a130bb58",
-            "path": "src/lib/libfizzbuzz/libfizzbuzz.h",
+            "path": "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.h",
             "text": "TOPS_AND_BOTTOMS",
             "lineNumber": 9,
             "lineData": "#define TOPS_AND_BOTTOMS printf(\"+-----+------+------+\\n\");",
@@ -47,15 +47,15 @@
         },
         "97ee8d33-968c-40c3-b728-62ee7801a281": {
             "type": "path",
-            "text": "src/lib",
-            "path": "src/lib"
+            "text": "src/libfizzbuzz",
+            "path": "src/libfizzbuzz"
         }
     },
     "file_version": "2.0.1",
     "meta": {
         "app_version": "0.4.5-0",
         "file_blobs": {
-            "src/lib/libfizzbuzz/libfizzbuzz.h": "ce83d8e4c24f051b1906bbf980b24aac6a07f470"
+            "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.h": "ce83d8e4c24f051b1906bbf980b24aac6a07f470"
         }
     }
 }
