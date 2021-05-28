@@ -9,7 +9,7 @@
         {
             "type": "snippet",
             "lines": [
-                " #include <stdio.h>",
+                " ",
                 " #include \"libfizzbuzz.h\"",
                 " ",
                 "*/**",
@@ -20,9 +20,10 @@
                 "*void do_fizz_buzz(unsigned int iterations)",
                 "*{",
                 "*  unsigned int i;",
+                "*",
                 "*  TOP_AND_BOTTOM;",
                 "*  for(i=1 ; i < iterations - 1; i++)",
-                "*    printf(\"| %-3d | %-4s | %-4s |\\n\", &i, i%3 ? \"\" : \"Fizz\", i%5 ? \"\" : \"Buzz\");",
+                "*    printf(\"| %-3d | %-4s | %-4s |\\n\", i, i%3 ? \"\" : \"Fizz\", i%5 ? \"\" : \"Buzz\");",
                 "*  TOP_AND_BOTTOM;",
                 "*  return 0;",
                 "*}",
@@ -30,7 +31,7 @@
                 " /**",
                 "  * Shortcut to iterate 100 times (which is the standard)"
             ],
-            "firstLineNumber": 1,
+            "firstLineNumber": 6,
             "path": "src/lib/libfizzbuzz/libfizzbuzz.c",
             "comments": [
                 "Here's our current main 'caller'"
@@ -71,9 +72,9 @@
     "symbols": {},
     "file_version": "2.0.1",
     "meta": {
-        "app_version": "0.4.4-0",
+        "app_version": "0.4.5-0",
         "file_blobs": {
-            "src/lib/libfizzbuzz/libfizzbuzz.c": "5e3b5830c2648384682ca727ef42ce1499ecd9d1",
+            "src/lib/libfizzbuzz/libfizzbuzz.c": "4f515e1f23d6a34d418e3ec9a340be7eefd13ac8",
             "src/lib/libfizzbuzz/libfizzbuzz.h": "38b365bcdf7fbcd5121825c8089c438130e145c5"
         }
     }
