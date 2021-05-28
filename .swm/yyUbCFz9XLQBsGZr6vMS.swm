@@ -85,6 +85,10 @@
             "comments": [
                 "We also need to make the code SUITable."
             ]
+        },
+        {
+            "type": "text",
+            "text": "However, we're still researching if `BATHING_SUIT` is the right \"fit\" for the market."
         }
     ],
     "symbols": {},
