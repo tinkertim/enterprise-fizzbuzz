@@ -73,8 +73,8 @@
             "lines": [
                 " #include <stdio.h>",
                 " ",
-                "*#ifndef SWIMMING_SUIT",
-                "*#define SWIMMING_SUIT \"POLKADOTS\"",
+                "*#ifndef BATHING_SUIT",
+                "*#define BATHING_SUIT \"POLKADOTS\"",
                 "*#endif",
                 " ",
                 " #include \"libfizzbuzz.h\"",
@@ -95,14 +95,14 @@
         "13cd1d22-c5e0-4b2e-8c8a-08496f3b4132": {
             "symbol": "13cd1d22-c5e0-4b2e-8c8a-08496f3b4132",
             "path": "src/lib/libfizzbuzz/libfizzbuzz.c",
-            "text": "SWIMMING_SUIT",
+            "text": "BATHING_SUIT",
             "lineNumber": 3,
-            "lineData": "#ifndef SWIMMING_SUIT",
+            "lineData": "#ifndef BATHING_SUIT",
             "wordIndex": {
                 "start": 3,
                 "end": 3
             },
-            "fileBlob": "6d1ac01039e34af4a22aba9599f1763f21ec4ece",
+            "fileBlob": "bfff20173f9f0e565d3bc07b66175cd594bbe2de",
             "type": "generic_text"
         }
     },
@@ -110,7 +110,7 @@
     "meta": {
         "app_version": "0.4.5-0",
         "file_blobs": {
-            "src/lib/libfizzbuzz/libfizzbuzz.c": "6d1ac01039e34af4a22aba9599f1763f21ec4ece",
+            "src/lib/libfizzbuzz/libfizzbuzz.c": "bfff20173f9f0e565d3bc07b66175cd594bbe2de",
             "src/lib/libfizzbuzz/libfizzbuzz.h": "ce83d8e4c24f051b1906bbf980b24aac6a07f470"
         }
     }
