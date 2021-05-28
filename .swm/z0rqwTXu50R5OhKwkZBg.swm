@@ -12,9 +12,9 @@
                 "  * Controls how the 'printed' iteration list is styled on the top and bottom.",
                 "  * Can be overridden via defining the constant on the command line.",
                 "  */",
-                "*#ifndef TOP_AND_BOTTOM",
-                "*#define TOP_AND_BOTTOM printf(\"+-----+------+------+\\n\");",
-                "*#endif // TOP_AND_BOTTOM",
+                "*#ifndef TOPS_AND_BOTTOMS",
+                "*#define TOPS_AND_BOTTOMS printf(\"+-----+------+------+\\n\");",
+                "*#endif // TOPS_AND_BOTTOMS",
                 "*",
                 " /* Public Prototypes */",
                 " void do_fizz_buzz(unsigned int);",
@@ -28,15 +28,15 @@
         },
         {
             "type": "text",
-            "text": "This means, you can pass `-D TOP_AND_BOTTOM` at compile time, and it will take precedence over what is in the header.\n\nIdeally, we only use this as a last resort while the rest of the library isn't implemented fully yet - and we write callers that output XML, JSON and YAML individually.\n\nWe'll then implement a fizzbuzz service that just produces fizzing and buzzing output, which the caller can wrap in any method."
+            "text": "This means, you can pass `-D TOPS_AND_BOTTOMS` at compile time, and it will take precedence over what is in the header.\n\nIdeally, we only use this as a last resort while the rest of the library isn't implemented fully yet - and we write callers that output XML, JSON and YAML individually.\n\nWe'll then implement a fizzbuzz service that just produces fizzing and buzzing output, which the caller can wrap in any method."
         }
     ],
     "symbols": {},
     "file_version": "2.0.1",
     "meta": {
-        "app_version": "0.4.4-0",
+        "app_version": "0.4.5-0",
         "file_blobs": {
-            "src/lib/libfizzbuzz/libfizzbuzz.h": "2e66ab1e7212b730304b3658a8434c0f2b4d9f34"
+            "src/lib/libfizzbuzz/libfizzbuzz.h": "ce83d8e4c24f051b1906bbf980b24aac6a07f470"
         }
     }
 }
