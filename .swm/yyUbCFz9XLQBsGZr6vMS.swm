@@ -66,7 +66,7 @@
         },
         {
             "type": "text",
-            "text": "That's not enough. We need to come up with at least 20 different callers that call `do_fizz_buzz` internally, so that we can provide fizzing and buzzing in many situations, with lots of complexity, overrides that produce unexpected behavior, and lots of tests."
+            "text": "That's not enough. We need to come up with at least 20 different callers that call `do_fizz_buzz` internally, so that we can provide fizzing and buzzing in many situations, with lots of complexity, overrides that produce unexpected behavior, and lots of tests.\n\nAs we have `TOP_AND_BOTTOM` defined, we understand that we should be wrapping the output in something tabular. During development, we're making this easy to just define on the command line if we need to override (e.g. `TOP_AND_BOTTOM` = \"..\") or via -D `TOP_AND_BOTTOM` / etc."
         }
     ],
     "symbols": {},
