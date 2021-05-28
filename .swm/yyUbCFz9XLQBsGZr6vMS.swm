@@ -21,10 +21,10 @@
                 "*{",
                 "*  unsigned int i;",
                 "*",
-                "*  TOP_AND_BOTTOM;",
+                "*  TOP_AND_BOTTOMS;",
                 "*  for(i=1 ; i < iterations - 1; i++)",
                 "*    printf(\"| %-3d | %-4s | %-4s |\\n\", i, i%3 ? \"\" : \"Fizz\", i%5 ? \"\" : \"Buzz\");",
-                "*  TOP_AND_BOTTOM;",
+                "*  TOP_AND_BOTTOMS;",
                 "*  return 0;",
                 "*}",
                 " ",
@@ -51,9 +51,9 @@
                 "* * Controls how the 'printed' iteration list is styled on the top and bottom.",
                 "* * Can be overridden via defining the constant on the command line.",
                 "* */",
-                "*#ifndef TOP_AND_BOTTOM",
-                "*#define TOP_AND_BOTTOM printf(\"+-----+------+------+\\n\");",
-                "*#endif // TOP_AND_BOTTOM",
+                "*#ifndef TOPS_AND_BOTTOMS",
+                "*#define TOPS_AND_BOTTOMS printf(\"+-----+------+------+\\n\");",
+                "*#endif // TOPS_AND_BOTTOMS",
                 " ",
                 " /* Public Prototypes */",
                 " void do_fizz_buzz(unsigned int);"
@@ -73,8 +73,8 @@
             "lines": [
                 " #include <stdio.h>",
                 " ",
-                "*#ifndef BATHING_SUIT",
-                "*#define BATHING_SUIT \"POLKADOTS\"",
+                "*#ifndef SWIMMING_SUIT",
+                "*#define SWIMMING_SUIT \"POLKADOTS\"",
                 "*#endif",
                 " ",
                 " #include \"libfizzbuzz.h\"",
@@ -96,8 +96,8 @@
     "meta": {
         "app_version": "0.4.5-0",
         "file_blobs": {
-            "src/lib/libfizzbuzz/libfizzbuzz.c": "4f515e1f23d6a34d418e3ec9a340be7eefd13ac8",
-            "src/lib/libfizzbuzz/libfizzbuzz.h": "38b365bcdf7fbcd5121825c8089c438130e145c5"
+            "src/lib/libfizzbuzz/libfizzbuzz.c": "6d1ac01039e34af4a22aba9599f1763f21ec4ece",
+            "src/lib/libfizzbuzz/libfizzbuzz.h": "ce83d8e4c24f051b1906bbf980b24aac6a07f470"
         }
     }
 }
