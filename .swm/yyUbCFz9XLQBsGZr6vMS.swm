@@ -21,10 +21,10 @@
                 "*{",
                 "*  unsigned int i;",
                 "*",
-                "*  TOP_AND_BOTTOMS;",
+                "*  TOPS_AND_BOTTOMS;",
                 "*  for(i=1 ; i < iterations - 1; i++)",
                 "*    printf(\"| %-3d | %-4s | %-4s |\\n\", i, i%3 ? \"\" : \"Fizz\", i%5 ? \"\" : \"Buzz\");",
-                "*  TOP_AND_BOTTOMS;",
+                "*  TOPS_AND_BOTTOMS;",
                 "*  return 0;",
                 "*}",
                 " ",
@@ -102,7 +102,7 @@
                 "start": 3,
                 "end": 3
             },
-            "fileBlob": "bfff20173f9f0e565d3bc07b66175cd594bbe2de",
+            "fileBlob": "6a40967e5174fe98a48da8898c6dbb08436f253f",
             "type": "generic_text"
         },
         "f1261734-5ebe-4fb4-b855-d4ef90ec6099": {
@@ -123,7 +123,7 @@
     "meta": {
         "app_version": "0.4.5-0",
         "file_blobs": {
-            "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.c": "bfff20173f9f0e565d3bc07b66175cd594bbe2de",
+            "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.c": "6a40967e5174fe98a48da8898c6dbb08436f253f",
             "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.h": "ce83d8e4c24f051b1906bbf980b24aac6a07f470"
         }
     }
