@@ -28,10 +28,29 @@
         },
         {
             "type": "text",
-            "text": "This means, you can pass `-D TOPS_AND_BOTTOMS` at compile time, and it will take precedence over what is in the header.\n\nIdeally, we only use this as a last resort while the rest of the library isn't implemented fully yet - and we write callers that output XML, JSON and YAML individually.\n\nWe'll then implement a fizzbuzz service that just produces fizzing and buzzing output, which the caller can wrap in any method."
+            "text": "This means, you can pass strings to [[sym-text:TOPS_AND_BOTTOMS(4135eebc-ffc3-422e-b4f6-7e75a130bb58)]] at compile time, and it will take precedence over what is in the header.\n\nIdeally, we only use this as a last resort while the rest of the library isn't implemented fully yet - and we write callers that output XML, JSON and YAML individually.\n\nWe'll then implement a fizzbuzz service that just produces fizzing and buzzing output, which the caller can wrap in any method.\n\nIt's generally a good idea to keep a close eye on everything in [[sym:./src/lib(97ee8d33-968c-40c3-b728-62ee7801a281)]] for the time being, as it'll probably change soon."
         }
     ],
-    "symbols": {},
+    "symbols": {
+        "4135eebc-ffc3-422e-b4f6-7e75a130bb58": {
+            "symbol": "4135eebc-ffc3-422e-b4f6-7e75a130bb58",
+            "path": "src/lib/libfizzbuzz/libfizzbuzz.h",
+            "text": "TOPS_AND_BOTTOMS",
+            "lineNumber": 9,
+            "lineData": "#define TOPS_AND_BOTTOMS printf(\"+-----+------+------+\\n\");",
+            "wordIndex": {
+                "start": 3,
+                "end": 3
+            },
+            "fileBlob": "ce83d8e4c24f051b1906bbf980b24aac6a07f470",
+            "type": "generic_text"
+        },
+        "97ee8d33-968c-40c3-b728-62ee7801a281": {
+            "type": "path",
+            "text": "src/lib",
+            "path": "src/lib"
+        }
+    },
     "file_version": "2.0.1",
     "meta": {
         "app_version": "0.4.5-0",
