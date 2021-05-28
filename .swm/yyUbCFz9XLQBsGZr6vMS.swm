@@ -88,10 +88,24 @@
         },
         {
             "type": "text",
-            "text": "However, we're still researching if `SWIMMING_SUIT` is the right \"fit\" for the market."
+            "text": "However, we may be refactoring soon, and changing [[sym-text:SWIMMING_SUIT(13cd1d22-c5e0-4b2e-8c8a-08496f3b4132)]]in a way that breaks it down into the components of the activity itself."
         }
     ],
-    "symbols": {},
+    "symbols": {
+        "13cd1d22-c5e0-4b2e-8c8a-08496f3b4132": {
+            "symbol": "13cd1d22-c5e0-4b2e-8c8a-08496f3b4132",
+            "path": "src/lib/libfizzbuzz/libfizzbuzz.c",
+            "text": "SWIMMING_SUIT",
+            "lineNumber": 3,
+            "lineData": "#ifndef SWIMMING_SUIT",
+            "wordIndex": {
+                "start": 3,
+                "end": 3
+            },
+            "fileBlob": "6d1ac01039e34af4a22aba9599f1763f21ec4ece",
+            "type": "generic_text"
+        }
+    },
     "file_version": "2.0.1",
     "meta": {
         "app_version": "0.4.5-0",
