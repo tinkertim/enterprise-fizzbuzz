@@ -15,10 +15,10 @@ void do_fizz_buzz(unsigned int iterations)
 {
   unsigned int i;
 
-  TOPS_AND_BOTTOMS;
+  TOP_AND_BOTTOM;
   for(i=1 ; i < iterations - 1; i++)
     printf("| %-3d | %-4s | %-4s |\n", i, i%3 ? "" : "Fizz", i%5 ? "" : "Buzz");
-  TOPS_AND_BOTTOMS;
+  TOP_AND_BOTTOM;
   return 0;
 }
 
