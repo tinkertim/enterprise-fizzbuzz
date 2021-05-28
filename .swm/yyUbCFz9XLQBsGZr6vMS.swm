@@ -66,7 +66,7 @@
         },
         {
             "type": "text",
-            "text": "That's not enough. We need to come up with at least 20 different callers that call `do_fizz_buzz` internally, so that we can provide fizzing and buzzing in many situations, with lots of complexity, overrides that produce unexpected behavior, and lots of tests.\n\nAs we have `TOPS_AND_BOTTOMS` defined, we understand that we should be wrapping the output in something tabular. During development, we're making this easy to just define on the command line if we need to override (e.g. `TOP_AND_BOTTOM` = \"..\") or via -D `TOPS_AND_BOTTOMS` / etc."
+            "text": "That's not enough. We need to come up with at least 20 different callers that call `do_fizz_buzz` internally, so that we can provide fizzing and buzzing in many situations, with lots of complexity, overrides that produce unexpected behavior, and lots of tests.\n\nNote that [[sym-text:TOPS_AND_BOTTOMS(f1261734-5ebe-4fb4-b855-d4ef90ec6099)]] might be subject to change."
         },
         {
             "type": "snippet",
@@ -103,6 +103,19 @@
                 "end": 3
             },
             "fileBlob": "bfff20173f9f0e565d3bc07b66175cd594bbe2de",
+            "type": "generic_text"
+        },
+        "f1261734-5ebe-4fb4-b855-d4ef90ec6099": {
+            "symbol": "f1261734-5ebe-4fb4-b855-d4ef90ec6099",
+            "path": "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.h",
+            "text": "TOPS_AND_BOTTOMS",
+            "lineNumber": 9,
+            "lineData": "#define TOPS_AND_BOTTOMS printf(\"+-----+------+------+\\n\");",
+            "wordIndex": {
+                "start": 3,
+                "end": 3
+            },
+            "fileBlob": "ce83d8e4c24f051b1906bbf980b24aac6a07f470",
             "type": "generic_text"
         }
     },
