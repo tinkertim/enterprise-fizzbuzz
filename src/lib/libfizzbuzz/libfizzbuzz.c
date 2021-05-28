@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-#ifndef SWIMMING_SUIT
-#define SWIMMING_SUIT "POLKADOTS"
+#ifndef BATHING_SUIT
+#define BATHING_SUIT "POLKADOTS"
 #endif
 
 #include "libfizzbuzz.h"
