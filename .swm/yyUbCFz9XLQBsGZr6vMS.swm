@@ -21,10 +21,10 @@
                 "*{",
                 "*  unsigned int i;",
                 "*",
-                "*  TOPS_AND_BOTTOMS;",
+                "*  TOP_AND_BOTTOM;",
                 "*  for(i=1 ; i < iterations - 1; i++)",
                 "*    printf(\"| %-3d | %-4s | %-4s |\\n\", i, i%3 ? \"\" : \"Fizz\", i%5 ? \"\" : \"Buzz\");",
-                "*  TOPS_AND_BOTTOMS;",
+                "*  TOP_AND_BOTTOM;",
                 "*  return 0;",
                 "*}",
                 " ",
@@ -44,21 +44,17 @@
         {
             "type": "snippet",
             "lines": [
-                " #ifndef LIBFIZZBUZZ_H",
-                " #define LIBFIZZBUZZ_H",
-                " ",
-                "*/**",
-                "* * Controls how the 'printed' iteration list is styled on the top and bottom.",
-                "* * Can be overridden via defining the constant on the command line.",
-                "* */",
-                "*#ifndef TOPS_AND_BOTTOMS",
-                "*#define TOPS_AND_BOTTOMS printf(\"+-----+------+------+\\n\");",
-                "*#endif // TOPS_AND_BOTTOMS",
+                "  * Controls how the 'printed' iteration list is styled on the top and bottom.",
+                "  * Can be overridden via defining the constant on the command line.",
+                "  */",
+                "*#ifndef TOP_AND_BOTTOM",
+                "*#define TOP_AND_BOTTOM printf(\"+-----+------+------+\\n\");",
+                "*#endif // TOP_AND_BOTTOM",
                 " ",
                 " /* Public Prototypes */",
                 " void do_fizz_buzz(unsigned int);"
             ],
-            "firstLineNumber": 1,
+            "firstLineNumber": 5,
             "path": "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.h",
             "comments": [
                 "We have selectable formatting implemented in the header, which can be overridden at compile time"
@@ -66,7 +62,7 @@
         },
         {
             "type": "text",
-            "text": "That's not enough. We need to come up with at least 20 different callers that call `do_fizz_buzz` internally, so that we can provide fizzing and buzzing in many situations, with lots of complexity, overrides that produce unexpected behavior, and lots of tests.\n\nNote that [[sym-text:TOPS_AND_BOTTOMS(f1261734-5ebe-4fb4-b855-d4ef90ec6099)]] might be subject to change."
+            "text": "That's not enough. We need to come up with at least 20 different callers that call `do_fizz_buzz` internally, so that we can provide fizzing and buzzing in many situations, with lots of complexity, overrides that produce unexpected behavior, and lots of tests.\n\nNote that [[sym-text:TOP_AND_BOTTOM(f1261734-5ebe-4fb4-b855-d4ef90ec6099)]] might be subject to change."
         },
         {
             "type": "snippet",
@@ -102,20 +98,20 @@
                 "start": 3,
                 "end": 3
             },
-            "fileBlob": "6a40967e5174fe98a48da8898c6dbb08436f253f",
+            "fileBlob": "4f515e1f23d6a34d418e3ec9a340be7eefd13ac8",
             "type": "generic_text"
         },
         "f1261734-5ebe-4fb4-b855-d4ef90ec6099": {
             "symbol": "f1261734-5ebe-4fb4-b855-d4ef90ec6099",
             "path": "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.h",
-            "text": "TOPS_AND_BOTTOMS",
+            "text": "TOP_AND_BOTTOM",
             "lineNumber": 9,
-            "lineData": "#define TOPS_AND_BOTTOMS printf(\"+-----+------+------+\\n\");",
+            "lineData": "#define TOP_AND_BOTTOM printf(\"+-----+------+------+\\n\");",
             "wordIndex": {
                 "start": 3,
                 "end": 3
             },
-            "fileBlob": "ce83d8e4c24f051b1906bbf980b24aac6a07f470",
+            "fileBlob": "38b365bcdf7fbcd5121825c8089c438130e145c5",
             "type": "generic_text"
         }
     },
@@ -123,8 +119,8 @@
     "meta": {
         "app_version": "0.4.5-0",
         "file_blobs": {
-            "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.c": "6a40967e5174fe98a48da8898c6dbb08436f253f",
-            "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.h": "ce83d8e4c24f051b1906bbf980b24aac6a07f470"
+            "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.c": "4f515e1f23d6a34d418e3ec9a340be7eefd13ac8",
+            "src/libfizzbuzz/libfizzbuzz/libfizzbuzz.h": "38b365bcdf7fbcd5121825c8089c438130e145c5"
         }
     }
 }
